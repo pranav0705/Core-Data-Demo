@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let context : NSManagedObjectContext = appDel.persistentContainer.viewContext
         
         var newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
-        
+
     /*    newUser.setValue("Pranav", forKey: "username")
         newUser.setValue("pranav123", forKey: "password")
         
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         }
         
  */
+        
         //let request = NSFetchRequest(entityName: "Users")
         let request: NSFetchRequest<NSFetchRequestResult> = Users.fetchRequest()
         request.returnsObjectsAsFaults = false
